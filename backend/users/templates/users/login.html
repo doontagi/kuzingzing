@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <title>Register</title>
+    <title>Log In</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script> -->
@@ -13,16 +13,16 @@
         <form method = "POST">
             {% csrf_token %}
             <fieldset class = "form-group">
-                <legend class="border-bottom mb-4">Join</legend>
+                <legend class="border-bottom mb-4">Log In</legend>
                 {{ form.as_p }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">sign up</button>
+                <button class="btn btn-outline-info" type="submit">log in</button>
             </div>
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Aleardy Have An Account? <a class="ml-2" href="../users/login.html">Sign In</a>
+                Need An Account? <a class="ml-2" href="../users/register.html">Sign Up Now</a>
             </small>
         </div>
     </div>

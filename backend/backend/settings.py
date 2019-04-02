@@ -129,4 +129,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/' # login() 뷰에서 로그인 처리가 성공한 후 root url 로 이동
 LOGOUT_REDIRCT_URL = '/'
-
+LOGIN_URL = 'login' # users.views.profile에서 로그인이 되어있지 않을 때 error 말고 login 페이지를 돌려줌 그 후에 profile
