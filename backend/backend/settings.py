@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'posting',
-    'accounts.apps.AccountsConfig'
 ]
 TIME_ZONE = 'Asia/Seoul'
 MIDDLEWARE = [
