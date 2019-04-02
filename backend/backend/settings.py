@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'posting',
+    'posting.apps.PostingConfig', # posting app 추가
+    'users.apps.UsersConfig', # users app 추가
 ]
 TIME_ZONE = 'Asia/Seoul'
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'template')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,3 +129,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/' # login() 뷰에서 로그인 처리가 성공한 후 root url 로 이동
 LOGOUT_REDIRCT_URL = '/'
+
