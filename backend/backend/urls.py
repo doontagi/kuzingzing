@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.url')), # login, signup을 위한 url
+    path('accounts/', include('accounts.urls')), # login, signup을 위한 url
+    path('accounts/', include('django.contrib.auth.urls'))
 ]

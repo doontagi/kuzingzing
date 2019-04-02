@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'posting'
+    'posting',
+    'accounts.apps.AccountsConfig'
 ]
 TIME_ZONE = 'Asia/Seoul'
 MIDDLEWARE = [
@@ -99,10 +100,11 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-]AUTHENTICATION_BACKENDS = [
+]
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend', # Django 기본 유저모델
     # 'social_core.backends.google.GoogleOAuth2', # Google
     # 'social_core.backends.facebook.FacebookOAuth2', # Facebook
-    'django.contrib.auth.backends.ModelBackend', # Django 기본 유저모델
 ]
 
 

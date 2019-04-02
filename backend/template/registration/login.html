@@ -1,5 +1,5 @@
 <!-- templates/registration/login.html -->
-{% extends 'base.html' %}
+{% comment %} {% extends 'base.html' %} {% endcomment %}
 
 {% block title %}Login{% endblock %}
 
@@ -10,7 +10,7 @@
   {{ form.as_p }}
   <button type="submit">Login</button>
 </form>
-<a href = "../signup">회원가입</a>
+<a href = "../join">회원가입</a>
 <!-- {% comment %} <a href="{% url "social:begin" "google-oauth2" %}"><button class="btn btn-danger" style="width: 40%">G+ Login</button></a> {% endcomment %} -->
 <!-- <a href="{% url "social:begin" "facebook" %}"><button class="btn btn-primary" style="width: 40%">FB Login</button></a> -->
 {% endblock %}
