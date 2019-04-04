@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    'rest_framework', # django-rest-framework 추가
     'posting.apps.PostingConfig', # posting app 추가
     'users.apps.UsersConfig', # users app 추가
 ]
